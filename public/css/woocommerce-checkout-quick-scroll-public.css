@@ -1,0 +1,38 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+a.go-pay {
+    color:#fff;
+    background-color:#96588a;
+    padding:10px;
+    text-align:center;
+    margin:auto;
+    display:block;
+    transition: .7s;
+}
+a.go-pay:hover {
+    background-color: #844076;
+    transition: .7s;
+}
+/*
+ * Add a warning image for backorder items
+ *
+*/
+.out-of-stock-messsage::before {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    background-image: url(/wp-content/plugins/woo-checkout-quick-scroll/assets/Red_Warning_Triangle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    padding: 5px 15px 0 15px;
+}
+/*
+ * Heavy font weight for out of stock message
+ *
+*/
+.out-of-stock-messsage {
+    font-weight: 900;
+}
